@@ -1,0 +1,27 @@
+{
+
+  "manifest_version": 2,
+  "name": "Display SCP Object Name",
+  "version": "0.2.9",
+
+  "description": "SCP財団(http://ja.scp-wiki.net/)の報告書にメタタイトルを表示する拡張です",
+
+  "icons": {
+    "48": "48icon.png",
+    "96": "96icon.png"
+  },
+
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
+
+  "content_scripts": [
+    {
+    "matches": ["*://scp-wiki.wikidot.com/scp-*",
+                "*://scp-jp.wikidot.com/scp-*"],
+		"js": ["content-scripts.js"]
+    }
+  ]
+}
