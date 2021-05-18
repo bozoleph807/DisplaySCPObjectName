@@ -4,7 +4,7 @@
   "name": "Display SCP Object Name",
   "version": "0.2.9",
 
-  "description": "SCP財団(http://ja.scp-wiki.net/)の報告書にメタタイトルを表示する拡張です",
+  "description": "SCP財団の報告書にメタタイトルを表示する拡張です",
 
   "icons": {
     "48": "48icon.png",
