@@ -2,8 +2,8 @@
 //[location.pathname]が「scp-###」「scp-####」の場合
 if (/scp.\d{3,4}/.test(location.pathname))
 {
-	var itemName = location.pathname.replace(/\//, '');		//SCPアイテム名（「scp-####」）を取得する
-    var itemNumber = location.pathname.replace(/\D/g, '');	//SCPアイテムの数値部分のみ
+	var itemName = location.pathname.replace(/\//, '');	//SCPアイテム名（「scp-####」）を取得する
+	var itemNumber = location.pathname.replace(/\D/g, '');	//SCPアイテムの数値部分のみ
 }
 
 //アイテム番号からシリーズ番号を生成
@@ -12,7 +12,7 @@ var seriesNumber = Math.ceil((Number(itemNumber)+1)/1000);
 //シリーズ番号が非数値の場合の処理
 if (isNaN(seriesNumber))
 {
-	exit;													//何もしないで終了する
+	exit;							//何もしないで終了する
 }
 
 //シリーズ一覧のpathname枝番部を生成する
